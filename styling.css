@@ -140,8 +140,7 @@ p {
 
 .columnMain {
   text-align: center;
-  display: flex;
-  flex-basis: 100%; /* Full width for small screens, change as needed */
+  display: flex;/* Full width for small screens, change as needed */
   margin-top: 3rem;
   margin-bottom: 6rem;
 }
