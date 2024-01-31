@@ -61,13 +61,13 @@ transition: font-size 0.5s ease;
 /* Media query for small screens */
 @media screen and (max-width: 1020px) {
 h2 {
-    font-size: 3vw; /* Smaller font size for small screens */
+    font-size: 1vw; /* Smaller font size for small screens */
 }
 }
 /* Media query for medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 h2 {
-    font-size: 3vw; /* Preferred font size for medium screens */
+    font-size: 2vw; /* Preferred font size for medium screens */
 }
 }
 
@@ -210,3 +210,15 @@ transform: scale(1.05);
     justify-content: center; /* Center items horizontally */
   }
   }
+
+
+  @media screen and (max-width: 1020px) {
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:large;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        margin-top: none;
+        margin-bottom: none;
+      }
+    }
