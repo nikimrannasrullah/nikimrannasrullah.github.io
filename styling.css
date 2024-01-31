@@ -59,15 +59,15 @@ font-size: 5vw; /* Default font size */
 transition: font-size 0.5s ease;
 }
 /* Media query for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1020px) {
 h2 {
-    font-size: 1vw; /* Smaller font size for small screens */
+    font-size: 3vw; /* Smaller font size for small screens */
 }
 }
 /* Media query for medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
 h2 {
-    font-size: 2vw; /* Preferred font size for medium screens */
+    font-size: 3vw; /* Preferred font size for medium screens */
 }
 }
 
