@@ -192,12 +192,17 @@ transform: scale(1.05);
 }
 
 .columnEdu {
-flex-basis: 49.99%;
-margin: 10px;
-border: 2px solid black;
-border-radius: 5px;
-padding: 20px;
-transition: transform 0.3s ease;
+  flex-basis: 49.99%;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    flex-basis: 100%; 
+  }
 }
 .columnEdu:hover {
 transform: scale(1.05);
