@@ -1,57 +1,59 @@
+/* ... Your existing code ... */
+
 /*create/call new font from project files myfont*/
 @font-face {
-    font-family: 'StretchPro';
-    src: url(myfont/StretchPro.otf) format('truetype');
+  font-family: 'StretchPro';
+  src: url(myfont/StretchPro.otf) format('truetype');
 }
 /*remove margin between paragraph*/
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    background-color: #eaeaea;
-    font-family: Arial, sans-serif;
+  background-color: #eaeaea;
+  font-family: Arial, sans-serif;
 }
 /* h1 Style */
 h1 {
-    font-family: 'StretchPro', sans-serif;
-    font-size: 120px;
-    color: #000000;
-    text-align: center;
-    vertical-align: middle;
-    margin: 10px 10px; /* top and bottom: 150px, left and right: 10px */
+  font-family: 'StretchPro', sans-serif;
+  font-size: 120px;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px 10px; /* top and bottom: 150px, left and right: 10px */
 }
-  /* Common styles for all screen sizes */
+/* Common styles for all screen sizes */
+h1 {
+  font-size: 10vw; /* Default font size */
+  transition: font-size 0.5s ease;
+}
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
   h1 {
-    font-size: 10vw; /* Default font size */
-    transition: font-size 0.5s ease;
+      font-size: 5vw; /* Smaller font size for small screens */
   }
-  /* Media query for small screens */
-  @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 5vw; /* Smaller font size for small screens */
-    }
+}
+/* Media query for medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+      font-size: 8vw; /* Preferred font size for medium screens */
   }
-  /* Media query for medium screens */
-  @media screen and (min-width: 601px) and (max-width: 1024px) {
-    h1 {
-        font-size: 8vw; /* Preferred font size for medium screens */
-    }
+}
+/* Media query for large screens */
+@media screen and (min-width: 1025px) {
+  h1 {
+      font-size: 9vw; /* Larger font size for large screens */
   }
-  /* Media query for large screens */
-  @media screen and (min-width: 1025px) {
-    h1 {
-        font-size: 9vw; /* Larger font size for large screens */
-    }
-  }
-  
+}
+
 /*h2 Style*/
 h2 {
-    font-family: 'StretchPro', sans-serif;
-    color: #585858;
-    text-align: center;
-    margin-bottom: 10px;
+  font-family: 'StretchPro', sans-serif;
+  color: #585858;
+  text-align: center;
+  margin-bottom: 10px;
 }
 /* Common styles for all screen sizes */
 h2 {
@@ -81,85 +83,87 @@ h2 {
 h3 {
   font-size: 1.2rem;
   font-family: 'StretchPro', sans-serif;
-    color: #090909;
-    text-align: center;
+  color: #090909;
+  text-align: center;
 }
 h3_title {
   font-size: 1.5rem;
   font-family: 'StretchPro', sans-serif;
-    color: #090909;
-    text-align: center;
+  color: #090909;
+  text-align: center;
 }
 
 h4 {
-    color: rgb(68, 66, 66);
-    text-align: center;
-    margin-top: none;
-    margin-bottom: none;
+  color: rgb(68, 66, 66);
+  text-align: center;
+  margin-top: none;
+  margin-bottom: none;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    margin-top: none;
-    margin-bottom: none;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-top: none;
+  margin-bottom: none;
 }
 
 
-  /* text animation */
+/* text animation */
 @keyframes bounceAnimation {
-    0% {
+  0% {
       transform: translateY(0);
-    }
-    50% {
+  }
+  50% {
       transform: translateY(-20px);
-    }
-    100% {
+  }
+  100% {
       transform: translateY(0);
-    }
   }
-  .bounce {
-    animation: bounceAnimation 1.5s infinite;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s 1s, opacity 1s;
-  }
-  .hide {
-    visibility: hidden;
-    opacity: 0;
-  }
-  
-  .container {
-    display: flex;
+}
+.bounce {
+  animation: bounceAnimation 1.5s infinite;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s 1s, opacity 1s;
+}
+.hide {
+  visibility: hidden;
+  opacity: 0;
 }
 
-.columnMain{
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.columnMain {
   text-align: center;
-  display: flexbox;
+  display: flex;
+  flex-basis: 100%; /* Full width for small screens, change as needed */
   margin-top: 3rem;
   margin-bottom: 6rem;
 }
 @media screen and (max-width: 600px) {
   .columnMain {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem; /* Smaller font size for small screens */
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem; /* Smaller font size for small screens */
   }
 }
 /* Media query for medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .columnMain {
-    margin-top: 5rem;
-    margin-bottom: 5rem; /* Smaller font size for small screens */
+      margin-top: 5rem;
+      margin-bottom: 5rem; /* Smaller font size for small screens */
   }
 }
 
 /* Media query for large screens */
 @media screen and (min-width: 1025px) {
   .columnMain {
-    margin-top: 6rem;
-    margin-bottom: 6rem; /* Smaller font size for small screens */
+      margin-top: 6rem;
+      margin-bottom: 6rem; /* Smaller font size for small screens */
   }
 }
 
@@ -167,24 +171,22 @@ p {
   transform: scale(1.05);
 }
 
-
 .columnMain:hover {
   transform: scale(1.05);
 }
 
-
-.columnTitle{
+.columnTitle {
   text-align: center;
   margin: 20px;
 }
 
 .column {
-    flex-basis: 33.33%;
-    margin: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    transition: transform 0.3s ease;
+  flex-basis: 33.33%;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s ease;
 }
 
 .column:hover {
@@ -202,13 +204,3 @@ p {
 .columnEdu:hover {
   transform: scale(1.05);
 }
-
-
-
-
-  
-  
-
-  
-  
-  
