@@ -1,5 +1,3 @@
-/* ... Your existing code ... */
-
 /*create/call new font from project files myfont*/
 @font-face {
   font-family: 'StretchPro';
@@ -57,38 +55,38 @@ h2 {
 }
 /* Common styles for all screen sizes */
 h2 {
-  font-size: 5vw; /* Default font size */
-  transition: font-size 0.5s ease;
+font-size: 5vw; /* Default font size */
+transition: font-size 0.5s ease;
 }
 /* Media query for small screens */
 @media screen and (max-width: 600px) {
-  h2 {
-      font-size: 1vw; /* Smaller font size for small screens */
-  }
+h2 {
+    font-size: 1vw; /* Smaller font size for small screens */
+}
 }
 /* Media query for medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  h2 {
-      font-size: 2vw; /* Preferred font size for medium screens */
-  }
+h2 {
+    font-size: 2vw; /* Preferred font size for medium screens */
+}
 }
 
 /* Media query for large screens */
 @media screen and (min-width: 1025px) {
-  h2 {
-      font-size: 3vw; /* Larger font size for large screens */
-  }
+h2 {
+    font-size: 3vw; /* Larger font size for large screens */
+}
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-family: 'StretchPro', sans-serif;
+font-size: 1.2rem;
+font-family: 'StretchPro', sans-serif;
   color: #090909;
   text-align: center;
 }
 h3_title {
-  font-size: 1.5rem;
-  font-family: 'StretchPro', sans-serif;
+font-size: 1.5rem;
+font-family: 'StretchPro', sans-serif;
   color: #090909;
   text-align: center;
 }
@@ -101,8 +99,8 @@ h4 {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+font-family: Arial, Helvetica, sans-serif;
+font-size: small;
   color: rgb(0, 0, 0);
   text-align: left;
   margin-top: none;
@@ -113,13 +111,13 @@ p {
 /* text animation */
 @keyframes bounceAnimation {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .bounce {
@@ -135,48 +133,49 @@ p {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
 }
 
-.columnMain {
-  text-align: center;
-  display: flex;/* Full width for small screens, change as needed */
-  margin-top: 3rem;
-  margin-bottom: 6rem;
+.columnMain{
+text-align: center;
+display: flexbox;
+margin-top: 3rem;
+margin-bottom: 6rem;
 }
 @media screen and (max-width: 600px) {
-  .columnMain {
-      margin-top: 0.8rem;
-      margin-bottom: 0.8rem; /* Smaller font size for small screens */
-  }
+.columnMain {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem; /* Smaller font size for small screens */
+}
 }
 /* Media query for medium screens */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .columnMain {
-      margin-top: 5rem;
-      margin-bottom: 5rem; /* Smaller font size for small screens */
-  }
+.columnMain {
+  margin-top: 5rem;
+  margin-bottom: 5rem; /* Smaller font size for small screens */
+}
 }
 
 /* Media query for large screens */
 @media screen and (min-width: 1025px) {
-  .columnMain {
-      margin-top: 6rem;
-      margin-bottom: 6rem; /* Smaller font size for small screens */
-  }
+.columnMain {
+  margin-top: 6rem;
+  margin-bottom: 6rem; /* Smaller font size for small screens */
+}
 }
 
 .columnMain:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
+
 
 .columnMain:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
-.columnTitle {
-  text-align: center;
-  margin: 20px;
+
+.columnTitle{
+text-align: center;
+margin: 20px;
 }
 
 .column {
@@ -189,17 +188,27 @@ p {
 }
 
 .column:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 .columnEdu {
-  flex-basis: 49.99%;
-  margin: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 20px;
-  transition: transform 0.3s ease;
+flex-basis: 49.99%;
+margin: 10px;
+border: 2px solid black;
+border-radius: 5px;
+padding: 20px;
+transition: transform 0.3s ease;
 }
 .columnEdu:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+
+
